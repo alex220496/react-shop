@@ -26,10 +26,16 @@ import ReactDOM from 'react-dom'
 //     return <h1>Hello World React.js</h1>
 // }
 
-const Main = () => {
+const H1 = () => <h1>Hello world</h1>
+
+const Text = () => {
     return(
         <>
-            <h1>Hello world</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Corrupti excepturi odit commodi, cupiditate, doloribus
+            numquam recusandae ad ipsam pariatur at molestiae ipsum,
+            facere rerum voluptatem blanditiis perferendis illo inventore
+            laudantium? </p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Corrupti excepturi odit commodi, cupiditate, doloribus
             numquam recusandae ad ipsam pariatur at molestiae ipsum,
@@ -43,5 +49,16 @@ const Main = () => {
         </>
     )
 }
+
+const Main = () => {
+    return(
+        <>
+            <H1/>
+            <Text/>
+        </>
+    )
+}
+    
+
 
 ReactDOM.render(<Main/>,document.getElementById("root"))
