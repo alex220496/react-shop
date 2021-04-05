@@ -1,17 +1,47 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from 'react'
+import ReactDOM from 'react-dom'
+//--------------------------------------------------
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+// const h1 = React.createElement("h1",{
+//     id:"title"},"Hello React.js");
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+/// JSX 
+// const h1 = <h1 id="name">Hello mister React.js</h1>
+
+// const ul = <ul>
+//     <li>Kyiv</li>
+//     <li>Lviv</li>
+// </ul>
+
+// const el =<div>
+//     {h1}
+//     {ul}
+// </div> 
+
+//ReactDOM.render(el,document.getElementById("root"))
+//---------------------------------------------------
+//Створення компонента через function declaration
+// function H1() {
+//     return <h1>Hello World React.js</h1>
+// }
+
+const Main = () => {
+    return(
+        <>
+            <h1>Hello world</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Corrupti excepturi odit commodi, cupiditate, doloribus
+            numquam recusandae ad ipsam pariatur at molestiae ipsum,
+            facere rerum voluptatem blanditiis perferendis illo inventore
+            laudantium? </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Corrupti excepturi odit commodi, cupiditate, doloribus
+            numquam recusandae ad ipsam pariatur at molestiae ipsum,
+            facere rerum voluptatem blanditiis perferendis illo inventore
+            laudantium? </p>
+        </>
+    )
+}
+
+ReactDOM.render(<Main/>,document.getElementById("root"))
