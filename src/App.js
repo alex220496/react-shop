@@ -10,7 +10,18 @@ import './cart.css'
 const App = () => {
     return (
         <>
-             <header class="header">
+          <Header/>   
+          <Main/> 
+          <Footer/>
+           
+        </>
+    )
+}
+
+const Header = () => {
+    return (
+        
+            <header class="header">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-3">
@@ -36,23 +47,37 @@ const App = () => {
                         </div>
                     </div>
                 </div>
-            </header>
-            <main class="main">
+            </header> 
+        
+    )
+}
+
+const Main = () => {
+    return (
+        
+           <main class="main">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-3">
-                            
+                            Filter
                         </div>
                         <div class="col-lg-9">
-                            
+                            Product List
                         </div>
                     </div>
                 </div>
-            </main>
-            <footer class="footer">
-                
-            </footer>
-        </>
+            </main> 
+       
+    )
+}
+
+const Footer = () => {
+    return (
+        
+             <footer class="footer">
+                 Footer
+             </footer>       
+        
     )
 }
 
