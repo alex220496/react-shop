@@ -1,5 +1,7 @@
 import React from 'react'
 
+import './cart.css'
+
 const Cart = () => {
     return (
         <div class="cart text-center">
