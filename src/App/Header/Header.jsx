@@ -1,23 +1,5 @@
 import React from 'react'
 
-
-import './reset.css'
-import './base.css'
-import './header.css'
-import './menu.css'
-import './cart.css'
-
-const App = () => {
-    return (
-        <>
-          <Header/>   
-          <Main/> 
-          <Footer/>
-           
-        </>
-    )
-}
-
 const Header = () => {
     return (
         
@@ -52,33 +34,4 @@ const Header = () => {
     )
 }
 
-const Main = () => {
-    return (
-        
-           <main class="main">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-3">
-                            Filter
-                        </div>
-                        <div class="col-lg-9">
-                            Product List
-                        </div>
-                    </div>
-                </div>
-            </main> 
-       
-    )
-}
-
-const Footer = () => {
-    return (
-        
-             <footer class="footer">
-                 Footer
-             </footer>       
-        
-    )
-}
-
-export default App;
+export default Header
