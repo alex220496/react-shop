@@ -1,4 +1,7 @@
 import React from 'react'
+import Logo from './Logo/Logo'
+import Menu from './Menu/Menu'
+import Cart from './Cart/Cart'
 
 const Header = () => {
     return (
@@ -7,25 +10,13 @@ const Header = () => {
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-3">
-                            <div class="logo">
-                                <img src="img/logo.png" alt=""/>
-                            </div>
+                            <Logo/>
                         </div>
                         <div class="col-lg-6">
-                            <div class="menu">
-                                <ul>
-                                    <li><a href="">Home</a></li>
-                                    <li><a href="">Products</a></li>
-                                    <li><a href="">Payment</a></li>
-                                    <li><a href="">Shipping</a></li>
-                                </ul>
-                            </div>
+                            <Menu/>
                         </div>
                         <div class="col-lg-3">
-                            <div class="cart text-center">
-                                <div class="products-count">0</div>
-                                <div class="products-price">$500</div>
-                            </div>
+                            <Cart/>
                         </div>
                     </div>
                 </div>
