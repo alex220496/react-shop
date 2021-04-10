@@ -1,16 +1,17 @@
 import React from "react"
+import ProductsList from './Products/ProductsList'
 
 const Main = () => {
     return (
         
-           <main class="main">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-3">
+           <main className="main">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-3">
                             Filter
                         </div>
-                        <div class="col-lg-9">
-                            Product List
+                        <div className="col-lg-9">
+                            <ProductsList/>
                         </div>
                     </div>
                 </div>
