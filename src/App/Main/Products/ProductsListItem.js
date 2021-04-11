@@ -20,16 +20,27 @@ const  ProductsListItem = ({
     description,
     type,
     capacity,
-    price
+    price,
+    image
 
 }) => {
     return (
         <div className="product-list-item">
+            <div className="product-img">
+                <img src={image} alt=""/>
+            </div>
             <div className="product-title">{name}</div>
             <div className="product-description">{description}</div>
             <div className="product-features">{type}</div>
             <div className="product-features">{capacity} Gb</div>
             <div className="product-price">{price}$</div>
+
+             <div className="product-quantity">
+                 <button>-</button>
+                 <input type="text" value="1"/>
+                 <button>+</button>
+             </div>
+             
             <div className="btn-add-to-cart">add to cart</div>
         </div>
     )
@@ -44,7 +55,8 @@ ProductsListItem.propTypes = {
 }
 
 ProductsListItem.defaultProps = {
-    description: "No description..."
+    description: "No description...",
+    imgage: "/img/noimage.png"
 }
 
 
