@@ -44,7 +44,7 @@ ProductsListItem.propTypes = {
 }
 
 ProductsListItem.defaultProps = {
-    description: "No description."
+    description: "No description..."
 }
 
 
