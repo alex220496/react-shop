@@ -13,9 +13,14 @@ import "./productListItem.css"
 // console.log(age);
 
 class ProductsListItem extends Component {
+
+    // constructor() {
+    //     super();
+    //     this.onIncrementClick = this.onIncrementClick.bind(this)
+    // }
     
     state = {
-        productCount:5,
+        productCount:0,
     }
 
     onIncrementClick () {
