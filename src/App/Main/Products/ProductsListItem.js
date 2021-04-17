@@ -3,21 +3,11 @@ import PropTypes from 'prop-types'
 import "./productListItem.css"
 
 
-// const user = {
-//     name: "jack",
-//     age: 25
-// }
 
-// const {name, age} = user;
-// console.log(name);
-// console.log(age);
 
 class ProductsListItem extends Component {
 
-    // constructor() {
-    //     super();
-    //     this.onIncrementClick = this.onIncrementClick.bind(this)
-    // }
+    
     
     state = {
         productCount:0,
