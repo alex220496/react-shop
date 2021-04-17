@@ -11,16 +11,10 @@ class ProductsListItem extends Component {
     
     state = {
         productCount:1,
-        color: "green"
-    }
-    
-    changeColor () {
-        this.setState((prevState) =>{
-            return(prevState.color === "red" ? {color:"green"} : {color: "red"})
-        })
-            
         
     }
+    
+    
 
     onIncrementClick () {
         this.setState((prevState) =>({
@@ -61,9 +55,7 @@ class ProductsListItem extends Component {
                      <button onClick={() => this.onIncrementClick()}>+</button>
                  </div>
     
-                <button className="btn-add-to-cart">add to cart</button>
-                <p >Color: {this.state.color}</p>
-                <button onClick={()=> this.changeColor()}>Change color</button>
+                
             </div>
         )
     }
