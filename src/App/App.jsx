@@ -11,8 +11,8 @@ class App extends Component {
 
   state = {
      cartData: {
-       count:10,
-       price:100
+       count:0,
+       price:0
      }
   }
 
@@ -22,10 +22,10 @@ class App extends Component {
           <Header/>   
           <Main/> 
           <Footer/>
-           
         </>
     )
-}
+
+  }
 
 } 
 
