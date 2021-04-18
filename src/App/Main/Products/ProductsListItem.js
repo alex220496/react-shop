@@ -28,7 +28,6 @@ class ProductsListItem extends Component {
             productCount:prevState.productCount - 1
         }))
     }
-    addToCart () {}
 
 
     render() {
