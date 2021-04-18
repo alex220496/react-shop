@@ -11,15 +11,17 @@ class App extends Component {
 
   state = {
      cartData: {
-       count:0,
-       price:0
+       count:10,
+       price:100
      }
   }
 
   render() {
     return (
         <>
-          <Header/>   
+          <Header
+            cartData={this.state.cartData}
+          />   
           <Main/> 
           <Footer/>
         </>
