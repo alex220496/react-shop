@@ -27,6 +27,8 @@ class ProductsListItem extends Component {
             productCount:prevState.productCount - 1
         }))
     }
+    addToCart () {}
+
 
     render() {
         const {
@@ -55,6 +57,7 @@ class ProductsListItem extends Component {
                      <button onClick={() => this.onIncrementClick()}>+</button>
                  </div>
     
+                <button className="btn-add-to-cart">add to cart</button>
                 
             </div>
         )
