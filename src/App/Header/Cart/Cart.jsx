@@ -14,12 +14,19 @@ const Cart = ({
     return (
         <div className="cart text-center">
             {
-                Object.keys(productsInCart).map(productId =>(
+                keys(productsInCart).map(productId =>(
                     <div key={productId}> {productsObj[productId].name} 
                     : {productsInCart[productId]}</div>
-                ))
+                ))    
             }
-            
+
+            <div>
+                Total: {
+                    keys(productsInCart).reduce((total,productId) =>(
+                        total + (productsObj[productId].price * productsInCart[productId])
+                    ), 0)
+                } 
+            </div>
         </div>
     )
 }
