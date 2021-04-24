@@ -8,7 +8,6 @@ import "./productListItem.css"
 class ProductsListItem extends Component {
 
     
-    
     state = {
         productCount:1,
         price:0
@@ -16,8 +15,6 @@ class ProductsListItem extends Component {
         
     }
     
-    
-
     onIncrementClick () {
         this.setState((prevState) =>({
             productCount:prevState.productCount + 1
@@ -29,9 +26,6 @@ class ProductsListItem extends Component {
             productCount:prevState.productCount - 1
         }))
     }
-
-    
-
 
     render() {
         const {
