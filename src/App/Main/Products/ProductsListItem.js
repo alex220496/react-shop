@@ -11,9 +11,9 @@ class ProductsListItem extends Component {
     state = {
         productCount:1,
         price:0
-        
-        
     }
+
+    
     
     onIncrementClick () {
         this.setState((prevState) =>({

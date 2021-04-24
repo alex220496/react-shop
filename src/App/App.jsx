@@ -12,9 +12,9 @@ class App extends Component {
   state = {
 
     productsInCart:{
-        1:5,
-        2:3,
-        3:0
+        1:0,
+        2:0,
+        
     }
 
     
@@ -41,7 +41,6 @@ class App extends Component {
           <Header
             productsInCart= {this.state.productsInCart}
           />  
-          <button onClick={() => this.addProductToCart(2,2)}>add to cart</button>  
           <Main
             addProductToCart={this.addProductToCart}
           /> 

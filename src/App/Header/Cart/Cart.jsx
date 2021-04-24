@@ -1,6 +1,12 @@
 import React from 'react'
 import {keys} from 'lodash'
 import './cart.css'
+import products from '../../Main/Products/products'
+
+const productsObj = products.reduce((obj, product) =>({
+    ...obj,
+    [product.id]:product
+}),{})
 
 const Cart = ({
     productsInCart
@@ -9,7 +15,8 @@ const Cart = ({
         <div className="cart text-center">
             {
                 Object.keys(productsInCart).map(productId =>(
-                    <div key={productId}> {productId} : {productsInCart[productId]}</div>
+                    <div key={productId}> {productsObj[productId].name} 
+                    : {productsInCart[productId]}</div>
                 ))
             }
             
