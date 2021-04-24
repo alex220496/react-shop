@@ -29,6 +29,7 @@ class ProductsListItem extends Component {
 
     render() {
         const {
+            id,
             name,
             description,
             type,
@@ -61,7 +62,9 @@ class ProductsListItem extends Component {
                      >+</button>
                  </div>
     
-                <button className="btn-add-to-cart" onClick={() => addProductToCart(this.state.productCount,price)}>add to cart</button>
+                <button className="btn-add-to-cart" onClick={() => addProductToCart(id,this.state.productCount)}
+                                                    
+                >add to cart</button>
                 
             </div>
         )
