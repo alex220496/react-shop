@@ -1,6 +1,7 @@
 import React from 'react'
 import ProductsListItem from './ProductsListItem'
 import products from './products'
+import "./productListItem.css"
 
 
 
