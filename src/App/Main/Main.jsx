@@ -8,7 +8,8 @@ import ProductsList from './Products/ProductsList'
 
 const Main = ({
     addProductToCart,
-    productsInCart
+    productsInCart,
+    removeProductFromCart
 }) => {
     return (
         
@@ -20,7 +21,9 @@ const Main = ({
                         </div>
                         <div className="col-lg-9">
                             <Route path="/" exact render={() => <ProductsList addProductToCart={addProductToCart}/>}/>
-                            <Route path="/cart" render={() => <CartPage productsInCart={productsInCart}/>}/>
+                            <Route path="/cart" render={() => <CartPage 
+                                removeProductFromCart={removeProductFromCart}
+                                productsInCart={productsInCart}/>}/>
                             <Route path="/payment" component={PaymentPage}/>
                             <Route path="/shipping" component={ShippingPage}/>
                             
