@@ -13,11 +13,8 @@ class App extends Component {
 
     productsInCart:{
         1:0,
-        2:0,
-        
-    }
-
-    
+        2:0,   
+    }  
   }
 
       addProductToCart = (id,count) => {
@@ -26,15 +23,10 @@ class App extends Component {
             ...prevState.productsInCart,
             [id]: (prevState.productsInCart[id] || 0) + count
             
-          }
-          
+          } 
       }))
-      
-      
-
       }
       
-
   render() {
     return (
         <>
@@ -48,9 +40,7 @@ class App extends Component {
           <Footer/>
         </>
     )
-
   }
-
 } 
 
 
