@@ -7,7 +7,8 @@ import './CartProductListItemExtended.css'
 const CartProductListItemExtended = ({
     product,
     productCount,
-    removeProductFromCart
+    removeProductFromCart,
+    changeProductCount,
     
 }) => ( 
         <div className="cart-product-list-item-description">
@@ -31,8 +32,11 @@ const CartProductListItemExtended = ({
                     </p>
 
                     <Quantity
-                        productCount={productCount}
-                    
+                        productCount={productCount}  
+                        onDecrementClick={() => (productCount === 1) ? removeProductFromCart(product.id) : changeProductCount(product.id,productCount-1)}
+                        onIncrementClick={() => changeProductCount(product.id,productCount+1)}
+                        minCount={0}
+
                     />
                     
                     <button onClick={() => removeProductFromCart(product.id)}>Delete product</button>
