@@ -1,9 +1,11 @@
 import React from "react"
 import { Route } from "react-router"
+import { Testimonials } from "../../Components/Testimonials/Testimonials"
 import CartPage from './CartPage/CartPage'
 import PaymentPage from './PaymentPage/PaymentPage'
 import ShippingPage from './ShippingPage/ShippingPage'
 import ProductsList from './Products/ProductsList'
+
 
 
 const Main = ({
@@ -28,7 +30,7 @@ const Main = ({
                                 productsInCart={productsInCart}/>}/>
                             <Route path="/payment" component={PaymentPage}/>
                             <Route path="/shipping" component={ShippingPage}/>
-                            
+                            <Route path="/" component={Testimonials}/>
 
                         </div>
                     </div>
