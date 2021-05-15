@@ -39,6 +39,7 @@ const CartProductListItemExtended = ({
 
                     />
                     
+                    
                     <button onClick={() => removeProductFromCart(product.id)}>Delete product</button>
                 </div>
             </div>
@@ -46,4 +47,7 @@ const CartProductListItemExtended = ({
 )
 
 export default CartProductListItemExtended
+
+
+
 
