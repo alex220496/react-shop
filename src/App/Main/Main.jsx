@@ -12,7 +12,8 @@ const Main = ({
     addProductToCart,
     productsInCart,
     removeProductFromCart,
-    changeProductCount
+    changeProductCount,
+    products
 }) => {
     return (
         
@@ -23,7 +24,9 @@ const Main = ({
                             Filter
                         </div>
                         <div className="col-lg-9">
-                            <Route path="/" exact render={() => <ProductsList addProductToCart={addProductToCart}/>}/>
+                            <Route path="/" exact render={() => <ProductsList 
+                                products={products}
+                                addProductToCart={addProductToCart}/>}/>
                             <Route path="/cart" render={() => <CartPage 
                                 removeProductFromCart={removeProductFromCart}
                                 changeProductCount={changeProductCount}
