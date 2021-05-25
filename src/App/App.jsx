@@ -16,7 +16,7 @@ class App extends Component {
     productsInCart:{  
       
     },  
-    products:[]
+    products:[],
   }
 
       componentDidMount() {
@@ -58,6 +58,7 @@ class App extends Component {
     return (
         <>
           <Header
+            products={this.state.products}
             productsInCart= {this.state.productsInCart}
           />  
           <Main

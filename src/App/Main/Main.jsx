@@ -9,11 +9,12 @@ import ProductsList from './Products/ProductsList'
 
 
 const Main = ({
+    products,
     addProductToCart,
     productsInCart,
     removeProductFromCart,
     changeProductCount,
-    products
+    
 }) => {
     return (
         
@@ -28,12 +29,13 @@ const Main = ({
                                 products={products}
                                 addProductToCart={addProductToCart}/>}/>
                             <Route path="/cart" render={() => <CartPage 
+                                products={products}
                                 removeProductFromCart={removeProductFromCart}
                                 changeProductCount={changeProductCount}
                                 productsInCart={productsInCart}/>}/>
                             <Route path="/payment" component={PaymentPage}/>
                             <Route path="/shipping" component={ShippingPage}/>
-                            <Route path="/" component={Testimonials}/>
+                            <Route path="/" exact component={Testimonials}/>
 
                         </div>
                     </div>

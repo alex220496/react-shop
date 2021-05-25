@@ -39,10 +39,11 @@ const products = [
     },
 ]
 
-export const getProductsObj = (array) => array.reduce((obj, product) =>({
+export const getProductsObj = (array) => array.reduce((obj, product) => ({
     ...obj,
-    [product.id]:product
-}),{})
+    [product.id]: product
+}), {})
+
 
 
 

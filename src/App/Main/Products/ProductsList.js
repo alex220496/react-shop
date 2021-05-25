@@ -5,8 +5,9 @@ import "./productListItem.css"
 
 
 const ProductsList = ({
+    products,
     addProductToCart,
-    products
+   
 }) => {
     return(
         <>
