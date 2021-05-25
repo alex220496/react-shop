@@ -28,6 +28,13 @@ body {
 .text-center {
 	text-align: center;
 }
+.form-field {
+	margin-bottom: 15px;
+}
+.form-field > input  {
+	height: 30px;
+	outline: none;
+}
 
 @media(min-width: 768px) {
 	.container {

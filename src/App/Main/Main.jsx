@@ -5,6 +5,7 @@ import CartPage from './CartPage/CartPage'
 import PaymentPage from './PaymentPage/PaymentPage'
 import ShippingPage from './ShippingPage/ShippingPage'
 import ProductsList from './Products/ProductsList'
+import CheckoutPage from "./CheckoutPage/CheckoutPage"
 
 
 
@@ -36,7 +37,7 @@ const Main = ({
                             <Route path="/payment" component={PaymentPage}/>
                             <Route path="/shipping" component={ShippingPage}/>
                             <Route path="/" exact component={Testimonials}/>
-
+                            <Route path="/checkout" component={CheckoutPage}/>
                         </div>
                     </div>
                 </div>
