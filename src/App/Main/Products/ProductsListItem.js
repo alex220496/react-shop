@@ -80,7 +80,7 @@ ProductsListItem.propTypes = {
 
 ProductsListItem.defaultProps = {
     description: "No description...",
-    imgage: "/img/noimage.png"
+    image: "/img/noimage.png"
 }
 
 

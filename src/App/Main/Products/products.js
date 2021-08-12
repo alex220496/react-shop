@@ -4,11 +4,11 @@ const products = [
     {
         id:1,
         name:"iPhone X",
-        // description:"This is iPhone X",
+        //description:"This is iPhone X",
         type:"phone",
         capacity:128,
-        price:1000,
-        image:"/img/ipad.png"
+        price:4000,
+        image:"/images/ipad.png"
     },
     {
         id:2,
@@ -17,7 +17,7 @@ const products = [
         type:"phone",
         capacity:128,
         price:1600,
-        image:"/img/iphone.png"
+        image:"/images/iphone.png"
     },
     {
         id:3,
@@ -26,7 +26,7 @@ const products = [
         type:"phone",
         capacity:128,
         price:800,
-        image:"/img/ipad.png"
+        image:"/images/iphone.png"
     },
     {
         id:4,
@@ -35,7 +35,7 @@ const products = [
         type:"phone",
         capacity:128,
         price:500,
-        image:"/img/iphone.png"
+        image:"/images/ipad.png"
     },
 ]
 
